@@ -66,16 +66,16 @@ const VideoCarousel = () => {
             gsap.to(videoDivRef.current[videoId], {
               width:
                 window.innerWidth < 760
-                  ? "10vw" // mobile
+                  ? "2vw" // mobile
                   : window.innerWidth < 1200
-                  ? "10vw" // tablet
-                  : "4vw", // laptop
+                  ? "2vw" // tablet
+                  : "2vw", // laptop
             });
 
             // set the background color of the progress bar
             gsap.to(span[videoId], {
               width: `${currentProgress}%`,
-              backgroundColor: "white",
+              backgroundColor: "#FFFFFF",
             });
           }
         },
